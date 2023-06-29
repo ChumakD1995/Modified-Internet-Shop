@@ -1,0 +1,44 @@
+#category-list li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#products li:hover {       
+    cursor: pointer; 
+    text-decoration: underline;
+}
+
+#product-info li:hover {
+        cursor: pointer;
+text-decoration: underline;
+}
+
+/* #categories {
+    float: left;
+    width: 200px;
+}
+
+#products {
+    float: left;
+    width: 300px;
+}
+
+#product-info {
+    float: left;
+    width: 400px;
+}
+
+#categories {
+    float: left;
+    width: 200px;
+}
+
+#products {
+    float: left;
+    width: 300px;
+}
+
+#product-info {
+    float: left;
+    width: 400px;
+} */

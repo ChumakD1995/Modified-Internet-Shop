@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work30</title>
+    <link rel="stylesheet" href="./app.css">
+    <link rel="icon" href="./prapor.jpg">
+</head>
+<body>
+    
+
+    <div id="categories">
+        <h2>Категорії</h2>
+        <ul id="category-list">
+            <li onclick="showProducts('Електроніка')">Електроніка</li>
+            <li onclick="showProducts('Одяг')">Одяг</li>
+            <li onclick="showProducts('Книги')">Книги</li>
+        </ul>
+    </div>
+    
+    <div id="products">
+        <h2>Товари</h2>
+        <ul id="product-list"></ul>
+    </div>
+    
+    <div id="product-info">
+        <h2>Інформація про товар</h2>
+        <div id="product-details"></div>
+        <button id="buy-button" onclick="showOrderForm()">Купити</button>
+    </div>
+
+
+    <div id="order-form" style="display: none;">
+        <h2>Форма оформлення замовлення</h2>
+        <form onsubmit="submitOrderFormEvent(event)">
+            <label for="customer-name">ПІБ покупця</label>
+            <input type="text" id="customer-name"> <br><br>
+
+            <label for="city">Місто</label>
+            <select id="city">
+                <option value="">Виберіть Місто</option>
+                <option value="Київ">Київ</option>
+                <option value="Львів">Львів</option>
+                <option value="Одеса">Одеса</option>
+                <option value="Дніпро">Дніпро</option>
+            </select> <br><br>
+
+            <label for="delivery-point">Склад Нової пошти для надсилання</label>
+            <input type="text" id="delivery-point"> <br><br>
+
+            <label for="payment-method">Спосіб оплати:</label>
+            <select id="payment-method">
+                <option value="">Виберіть спосіб оплати</option>
+                <option value="Післяплата">Післяплата</option>
+                <option value="Оплата банківською карткою">Оплата банківською карткою</option> 
+            </select> <br><br>
+
+            <label for="quantity">Кількість продукції:</label>
+            <input type="number" id="quantity" min="1"> <br><br>
+
+            <label for="comment">Коментар до замовлення:</label>
+            <textarea id="comment"></textarea> <br><br>
+
+            <input type="submit" value="Підтвердити замовлення">
+        </form>
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>
